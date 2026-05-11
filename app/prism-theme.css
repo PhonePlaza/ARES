@@ -1,0 +1,150 @@
+/* ==========================================
+ * Prism.js Custom Dark Theme
+ * Matches Frida Agent dark UI (#0B0E14)
+ * ========================================== */
+
+/* Base code styling */
+code[class*="language-"],
+pre[class*="language-"] {
+    color: #e2e8f0;
+    background: none;
+    font-family: 'Geist Mono', 'Fira Code', 'Consolas', 'Monaco', monospace;
+    font-size: 0.875rem;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.7;
+    tab-size: 4;
+    hyphens: none;
+}
+
+/* Comments — gray */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #636e7b;
+    font-style: italic;
+}
+
+/* Punctuation — lighter gray */
+.token.punctuation {
+    color: #8b949e;
+}
+
+/* Keywords — purple/violet */
+.token.keyword,
+.token.tag,
+.token.namespace {
+    color: #c678dd;
+    font-weight: 500;
+}
+
+/* Strings — green */
+.token.string,
+.token.attr-value,
+.token.char {
+    color: #98c379;
+}
+
+/* Numbers — orange */
+.token.number,
+.token.boolean {
+    color: #d19a66;
+}
+
+/* Functions — yellow */
+.token.function {
+    color: #e5c07b;
+}
+
+/* Methods / Properties — light blue */
+.token.method,
+.token.property {
+    color: #61afef;
+}
+
+/* Variables / Identifiers — light cyan */
+.token.variable {
+    color: #56b6c2;
+}
+
+/* Class names — yellow-gold */
+.token.class-name {
+    color: #e5c07b;
+    font-weight: 500;
+}
+
+/* Operators — cyan */
+.token.operator {
+    color: #56b6c2;
+}
+
+/* Regex — orange */
+.token.regex {
+    color: #d19a66;
+}
+
+/* Important / bold */
+.token.important,
+.token.bold {
+    font-weight: bold;
+}
+
+/* Builtin / constant — soft blue */
+.token.builtin,
+.token.constant {
+    color: #61afef;
+}
+
+/* Attribute names (XML/HTML) — orange */
+.token.attr-name {
+    color: #d19a66;
+}
+
+/* Decorators / Annotations (Java @Override etc.) — purple */
+.token.annotation {
+    color: #c678dd;
+}
+
+/* Selection highlight */
+code[class*="language-"]::selection,
+code[class*="language-"] *::selection {
+    background: rgba(97, 175, 239, 0.2);
+}
+
+/* ==========================================
+ * Code Editor Overrides
+ * ========================================== */
+
+/* react-simple-code-editor container */
+.code-editor-container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.code-editor-container textarea {
+    outline: none !important;
+}
+
+/* Ensure the editor takes full height */
+.code-editor-container > div {
+    min-height: 100% !important;
+}
+
+/* Read-only code viewer (analysis page) */
+.code-viewer-readonly {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.code-viewer-readonly pre {
+    margin: 0;
+    padding: 1rem;
+}
